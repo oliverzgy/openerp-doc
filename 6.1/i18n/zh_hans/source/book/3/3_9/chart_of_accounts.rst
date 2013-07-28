@@ -26,7 +26,7 @@
 .. i18n: When configuring the software, OpenERP allows you to choose predefined charts of accounts, which include all basic configuration, such as tax codes and fiscal positions. Of course, you can also define your own chart of accounts.
 ..
 
-When configuring the software, OpenERP allows you to choose predefined charts of accounts, which include all basic configuration, such as tax codes and fiscal positions. Of course, you can also define your own chart of accounts.
+配置软件时，OpenERP允许您选择预定义的会计科目表，其中包括所有的基本配置，如税收法规和财政状况。当然，你也可以定义自己的会计科目表。
 
 .. i18n: Using a Preconfigured Chart of Accounts
 .. i18n: ---------------------------------------
@@ -39,8 +39,7 @@ When configuring the software, OpenERP allows you to choose predefined charts of
 .. i18n: The ``Generic Chart of Accounts`` offers a default (but limited) set of accounts which can be used as a basic chart in any country. The ``Chart of Accounts`` list also includes a lot of localised charts of accounts.
 ..
 
-On installation, the software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country (in most cases), select the chart corresponding to your country from the ``Installation Wizard``.
-The ``Generic Chart of Accounts`` offers a default (but limited) set of accounts which can be used as a basic chart in any country. The ``Chart of Accounts`` list also includes a lot of localised charts of accounts.
+在安装时，软件可以让您从许多的预定义好的科目表中选择一个默认的会计科目表。 要安装（大多数情况下）贵国的会计科目表以及税种定义，需从 ``Installation Wizard`` 中选择符合贵国的列表。 ``Generic Chart of Accounts`` 提供一个默认（但有限）的科目表，可作为任何国家科目表的基础。 ``Chart of Accounts`` 列表中还包括了很多本地化的会计科目表。
 
 .. i18n: .. figure::  images/account_chart.png
 .. i18n:    :scale: 75
@@ -53,12 +52,12 @@ The ``Generic Chart of Accounts`` offers a default (but limited) set of accounts
    :scale: 75
    :align: center
 
-   *Starting from a Generic Chart of Accounts*
+   *采用通用会计科目表*
 
 .. i18n: The wizard will change a bit according to the chart of accounts you select. For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. Here OpenERP will automatically install the tax configuration for Belgium too. You will, however, be able to select the default sales and purchase tax to be added when you create a new product.
 ..
 
-The wizard will change a bit according to the chart of accounts you select. For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. Here OpenERP will automatically install the tax configuration for Belgium too. You will, however, be able to select the default sales and purchase tax to be added when you create a new product.
+该向导将根据您所选择的科目表而有所不同。 For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. 这里的OpenERP也会自动安装比利时税务定义。您也许希望，当增加一个新的产品时可以选择默认的销售和采购税种。
 
 .. i18n: .. figure::  images/account_chart_be.png
 .. i18n:    :scale: 75
@@ -71,26 +70,26 @@ The wizard will change a bit according to the chart of accounts you select. For 
    :scale: 75
    :align: center
 
-   *Starting from a Belgian Chart of Accounts*
+   *采用比利时科目表*
 
 .. i18n: Please keep in mind that even when you use a default chart of accounts, you can still modify it to fit your needs.
 ..
 
-Please keep in mind that even when you use a default chart of accounts, you can still modify it to fit your needs.
+请记住，即使您使用默认的会计科目表，您仍然可以修改它以满足您的需求。
 
 .. i18n: .. note:: Modules
 .. i18n: 
 .. i18n:     You can install a chart from the list of modules too, so simply skip the installation wizard then. The module name will be like :mod:`l10n_XX` where XX represents your country code in two letters. For example, to get the chart of accounts for Belgium, go to :menuselection:`Settings --> Modules --> Modules` and install the module :mod:`l10n_be`. This will propose the exact same chart from the wizard (``Belgium - Plan Comptable Minimum Normalise``).
 ..
 
-.. note:: Modules
+.. note:: 模块
 
-    You can install a chart from the list of modules too, so simply skip the installation wizard then. The module name will be like :mod:`l10n_XX` where XX represents your country code in two letters. For example, to get the chart of accounts for Belgium, go to :menuselection:`Settings --> Modules --> Modules` and install the module :mod:`l10n_be`. This will propose the exact same chart from the wizard (``Belgium - Plan Comptable Minimum Normalise``).
+    您也可以从模块列表中安装一个科目表，要这样在此只需要简单地跳过安装向导。 模块名会类似 :mod:`l10n_XX` ，这里 XX 是表示国家代码的两个字母。 例如,要得到比利时科目表, 通过 :menuselection:`Settings --> Modules --> Modules` 安装模块 :mod:`l10n_be`。 结果和通过向导 (``Belgium - Plan Comptable Minimum Normalise``) 可取得同样的科目表。
 
 .. i18n: Some of these pre-defined charts of accounts are comprehensive and accurate, others rather have a more tentative status and are simply indicators of the possibilities. You can modify these, or build your own accounts onto the default chart, or replace it entirely with a custom chart.
 ..
 
-Some of these pre-defined charts of accounts are comprehensive and accurate, others rather have a more tentative status and are simply indicators of the possibilities. You can modify these, or build your own accounts onto the default chart, or replace it entirely with a custom chart.
+许多预定义的科目表是完整且准确的，但也有一些处于试验状态和仅仅显示其可能性如此定义。 您可以修改它们，或在默认科目表上定义自己的科目， 或根据自定义的科目表修改其中项目。
 
 .. i18n: Creating a Chart of Accounts
 .. i18n: ----------------------------
@@ -109,12 +108,12 @@ Some of these pre-defined charts of accounts are comprehensive and accurate, oth
 .. i18n: Start by creating :guilabel:`Account Types`, which determine the kind of account and the way in which accounts will be treated at financial year closing.
 ..
 
-Start by creating :guilabel:`Account Types`, which determine the kind of account and the way in which accounts will be treated at financial year closing.
+通过菜单 :guilabel:`Account Types`, 创建科目类型来确定年底结帐时科目余额的处理方式。
 
 .. i18n: To add, modify or delete existing account types, go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
 ..
 
-To add, modify or delete existing account types, go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
+要增加，修改或删除已存在的科目类型得通过菜单 :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
 
 .. i18n: .. figure::  images/account_type.png
 .. i18n:    :scale: 75
@@ -127,12 +126,12 @@ To add, modify or delete existing account types, go to the menu :menuselection:`
    :scale: 75
    :align: center
 
-   *Defining Account Types*
+   *定义科目类型*
 
 .. i18n: The fields used to define an account type are the following:
 ..
 
-The fields used to define an account type are the following:
+用于定义科目类型的字段如下：
 
 .. i18n: *  :guilabel:`Account Type`: the name of the account type.
 .. i18n: 
@@ -150,18 +149,18 @@ The fields used to define an account type are the following:
 .. i18n: *  :guilabel:`Sign on Reports`: this field allows you to reverse the sign of accounts, such as Income accounts being printed positive instead of the default negative. Use ``Reverse balance sign`` to accomplish this.
 ..
 
-*  :guilabel:`Account Type`: the name of the account type.
+*  :guilabel:`Account Type`: 科目类型名称。
 
-*  :guilabel:`Code`: the code of the account type.
+*  :guilabel:`Code`: 科目类型编码。
 
 *  :guilabel:`PL/BS Category`: this category determines where in a report the account will be printed (i.e. Balance Sheet and Profit and Loss). There are five types you can use: No type at all (/), Balance Sheet (Assets Accounts = active), Balance Sheet (Liabilities Accounts = passive), Profit & Loss (Income) and Profit & Loss (Expense).
 
-*  :guilabel:`Deferral Method`: this field indicates how and whether the account will be transferred at financial year closing.
+*  :guilabel:`Deferral Method`: 这个字段表明在年度结转时如何及是否结转科目余额。
 
-    - ``None`` means that the account will not be transferred. Typically used for profit and loss accounts.
-    - ``Balance`` means that the account balance will be transferred at year closing. Typically used for balance sheet accounts.
-    - ``Detail`` means that every single entry will be transferred to the next financial year.
-    - ``Unreconciled`` means that only unreconciled (outstanding) entries will be transferred to the next financial year. Typically used for centralisation accounts.
+    - ``None`` 意味本科目余额不会被结转. 通常用于损益类科目.
+    - ``Balance`` 表明年底科目余额会被结转。通常用于资产负债表科目。
+    - ``Detail`` 表明每一条分录都会被结转到下年。
+    - ``Unreconciled`` 表明只有未核销净的（仍有余额）的分录会结转到下年。 通常用于往来类科目。
 
 *  :guilabel:`Sign on Reports`: this field allows you to reverse the sign of accounts, such as Income accounts being printed positive instead of the default negative. Use ``Reverse balance sign`` to accomplish this.
 
@@ -173,7 +172,7 @@ Use the :guilabel:`View` type for accounts that make up the structure of the cha
 .. i18n: To add, modify or delete existing accounts, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`.
 ..
 
-To add, modify or delete existing accounts, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`.
+要增加，修改或删除已存在的会计科目得通过菜单 :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`.
 
 .. i18n: .. figure::  images/account_form.png
 .. i18n:    :scale: 75
@@ -186,12 +185,12 @@ To add, modify or delete existing accounts, use the menu :menuselection:`Account
    :scale: 75
    :align: center
 
-   *Defining Accounts*
+   *定义会计科目*
 
 .. i18n: The main account fields are:
 ..
 
-The main account fields are:
+科目涉及的主要的字段:
 
 .. i18n: *  :guilabel:`Name`: the account name.
 .. i18n: 
@@ -220,15 +219,14 @@ The main account fields are:
 .. i18n: *  :guilabel:`Default Taxes`: this is the default tax applied to purchases or sales using this account. It enables the system to propose tax entries automatically when entering data in a journal manually.
 ..
 
-*  :guilabel:`Name`: the account name.
+*  :guilabel:`Name`: 科目名称。
 
-*  :guilabel:`Code`: the code length is not limited to a specific number of digits. Use code 0 to indicate the root account.
+*  :guilabel:`Code`: 科目编码数字的位数不受限制. 0为顶级科目的编码。
 
-*  :guilabel:`Parent`: determines which account is the parent of this one, to create the tree structure of
-   the chart of accounts.
+*  :guilabel:`Parent`: 确定哪个科目是本科目的上级科目， 这样可创建树型科目表。
 
-*  :guilabel:`Internal Type`: internal types have special effects in OpenERP.
-   By default, the following types are available:
+*  :guilabel:`Internal Type`: OpenERP中有特殊作用的内部类型。正常情况下，有如下类型可选：
+
    ``View`` can be used to create a hierarchical structure for your accounts (grouping),
    ``Regular`` any account that does not fit into one of the other types; most of the accounts will have this type,
    ``Receivable`` - ``Payable``: these types are used to indicate the centralisation accounts (for customers and suppliers) that will be set for each partner,

@@ -34,7 +34,7 @@
 .. i18n: * :guilabel:`Invoice on` : ``Ordered Quantities`` or ``Shipped Quantities``.
 ..
 
-* :guilabel:`Picking Policy` 装箱方式 : ``Partial Delivery`` 分批交货 或 ``Complete Delivery`` 一次性交货,
+* :guilabel:`装箱方式(Picking Policy)`  : ``分批交货(Partial Delivery)``  或 ``一次性交货(Complete Delivery)`` ,
 
 * :guilabel:`Shipping Policy` : ``Shipping & Manual Invoice``, ``Payment Before Delivery``,
   ``Invoice on Order After Delivery``, and ``Invoice from Delivery``,
@@ -52,7 +52,7 @@
 按发货单开发票 ——订单确认后自动生成发货单。在【销售-发票管理-待开票的发货单】菜单，可以看到待开发票的发货单
 
 
-* :guilabel:`Invoice on` 开票基于 : ``Ordered Quantities`` 已订数量 或 ``Shipped Quantities`` 已发数量.
+* :guilabel:`开票基于(Invoice on)`  : ``已订数量(Ordered Quantities)``  或 ``已发数量(Shipped Quantities)`` .
 
 .. i18n:   .. tip::  Configuring your Interface
 .. i18n: 
@@ -65,9 +65,9 @@
 
   .. tip::  配置界面
 
-     如果您在“简化界面”下工作，只能看到销售订单的装箱方式 :guilabel:`Shipping Policy` 字段。
-     可以通过配置向导配置界面为“扩展”，或把当前用户添加到组“可用性－扩展视图”，就可以切换到“扩展”视图模式。
-     您也可以点击“首选项”选择并切换试图。
+     如果您在 ``简化界面`` 下工作，只能看到销售订单的装箱方式 :guilabel:`Shipping Policy` 字段。
+     可以通过配置向导配置界面为 ``扩展`` ，或把当前用户添加到组 ``可用性－扩展视图`` ，就可以切换到“扩展”视图模式。
+     您也可以点击 ``首选项`` 选择并切换试图。
 
 .. i18n: Picking Mode
 .. i18n: ------------
@@ -93,8 +93,7 @@ By default, the :guilabel:`Available` filter button is selected, so you immediat
 .. i18n: and do a second picking operation later when the remaining products are available in stock.
 ..
 
-The storesperson will then be able to make a partial delivery of the quantities actually available
-and do a second picking operation later when the remaining products are available in stock.
+仓库管理员可以根据送货的实际数量进行部分发货.然后后续可以在备货完成的情况下继续发货操作.
 
 .. i18n: If the picking mode is :guilabel:`Complete Delivery`, the picking order will not appear in the list of
 .. i18n: pickings to do until all of the products are available in stock. This way, there will only be a
@@ -109,8 +108,7 @@ single delivery for any such order.
 .. i18n: order has been confirmed.
 ..
 
-If the storesperson wants to do so, the delivery mode can be modified on each picking list even after the
-order has been confirmed.
+只要仓库管理员愿意, 每个发货单的发货方式都可以修改. 甚至在订单被确认后都还可以继续修改.
 
 .. i18n: In the case of invoicing from picking, the cost of delivering the products will be
 .. i18n: calculated according to multiple deliveries. This risks incurring a higher cost because of
@@ -118,9 +116,8 @@ order has been confirmed.
 .. i18n: once for the whole delivery, even if the delivery of several items has already been made.
 ..
 
-In the case of invoicing from picking, the cost of delivering the products will be
-calculated according to multiple deliveries. This risks incurring a higher cost because of
-the separate deliveries. If invoicing is done from the order, the customer will only be invoiced
+本例开票方式是 ``来自订单`` , 产品的成本可以根据多次交付而多次调整.但是这样带来的结果是,处理多次收货较单次
+收货的风险成本增加.If invoicing is done from the order, the customer will only be invoiced
 once for the whole delivery, even if the delivery of several items has already been made.
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.

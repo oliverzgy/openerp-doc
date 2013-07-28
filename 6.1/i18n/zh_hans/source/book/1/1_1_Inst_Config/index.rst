@@ -92,19 +92,15 @@
 .. i18n:    OpenERP is that system, and is described in detail throughout this book.
 ..
 
-.. note:: The SaaS, or “on-demand”, offer
+.. note:: SaaS或按需提供
 
-   SaaS (Software as a Service) is delivered by a hosting supplier and paid in the form of a monthly
-   subscription that
-   includes hardware (servers), system maintenance, provision of hosting services, and support.
+   SaaS (软件即服务 ) 由托管服务商提供服务，客户按月缴纳服务费的形式使用。包括硬件（服务器），系统维护，提供托管服务和支持。
 
-   You can get a month's free trial on OpenERP's http://www.openerp.com/online, which enables you to get
-   started quickly
-   without incurring costs for integration or for buying computer systems.
-   Many of OpenERP's partner companies will access this, and some may offer their own similar service.
+   在你这里你可以获得OpenERP一个月的免费试用 http://www.openerp.com/online，它可以让你在不增加系统费用投入的情况下快速的开始试用。
+   很多OpenERP的合作伙伴都是用它，其中有一些还提供类似的服务。
 
-   This service should be particularly useful to small companies that just want to get going quickly
-   and at low cost.
+   这项服务对于小公司特别有用，他们往往希望用尽量少的花费，最快的将系统运行起来。
+   
    It gives you immediate access to an integrated management system that has been built on the type
    of enterprise architecture
    used in banks and other large organizations.
@@ -114,8 +110,8 @@
 .. i18n: points:
 ..
 
-Whether you want to test OpenERP or to put it into full production, you have at least three starting
-points:
+无论你是想测试OpenERP还是想把它投入正式生产，至少需要三starting点：
+
 
 .. i18n: * no need to install OpenERP, you can test it through http://demo.openerp.com,
 .. i18n: 
@@ -125,21 +121,21 @@ points:
 .. i18n: * install it on your own computers to test it in your company's system environment.
 ..
 
-* no need to install OpenERP, you can test it through http://demo.openerp.com,
+* 无需安装，可通过这里进行测试 http://demo.openerp.com,
 
-* evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
-  http://ondemand.openerp.com, or the equivalent service at any of OpenERP's partner companies,
+* 在线评估地址 http://www.openerp.com OpenERP SaaS 测试地址 http://ondemand.openerp.com，
+  或者在OpenERP合作伙伴处体验这些内容，
+ 
 
-* install it on your own computers to test it in your company's system environment.
+* 在你自己的电脑上安装测试。
 
 .. i18n: There are some differences between installing OpenERP on Windows and on Linux systems, but once
 .. i18n: installed, both systems offer the same functionality so you will not generally be able to tell which type
 .. i18n: of server you are using.
 ..
 
-There are some differences between installing OpenERP on Windows and on Linux systems, but once
-installed, both systems offer the same functionality so you will not generally be able to tell which type
-of server you are using.
+在Windows上安装OpenERP和在Linux上安装略有不同，但是一旦安装上，系统提供的功能都是一样的，所以你不必在意你用的是那种服务器。
+
 
 .. i18n: .. note:: Linux, Windows, Mac
 .. i18n: 
@@ -149,8 +145,7 @@ of server you are using.
 
 .. note:: Linux, Windows, Mac
 
-   Although this book deals only with installation on Windows and Linux systems, the same versions
-   are also available for Macintosh on the official website of OpenERP.
+   虽然这本书只涉及在Windows和Linux系统上安装，但是OpenERP的官方网站上相同的版本也可用于Macintosh。
 
 .. i18n: .. note:: Websites for OpenERP
 .. i18n: 
@@ -164,15 +159,15 @@ of server you are using.
 .. i18n:      http://www.openobject.com/forum.
 ..
 
-.. note:: Websites for OpenERP
+.. note:: OpenERP的网站
 
-   * Main Site: http://www.openerp.com,
+   * 主站: http://www.openerp.com,
 
-   * SaaS or OpenERP OnLine Site: http://www.openerp.com/online,
+   * SaaS 或 OpenERP在线: http://www.openerp.com/online,
 
-   * Documentation Site: http://doc.openerp.com/,
+   * 文档站: http://doc.openerp.com/,
 
-   * Community discussion forum where you can often receive informed assistance:
+   * 社区论坛，在那里你可以经常得到其他人的帮助:
      http://www.openobject.com/forum.
 
 .. i18n: .. tip:: Current documentation
@@ -182,7 +177,7 @@ of server you are using.
 .. i18n:    the release and on the website – for exact installation procedures.
 ..
 
-.. tip:: Current documentation
+.. tip:: 当前文档
 
    The procedure for installing OpenERP will change and improve with
    each new version, so you should always check each release's documentation – both packaged with
@@ -192,8 +187,7 @@ of server you are using.
 .. i18n: OpenERP installation is working. You can follow earlier chapters in this part of the book to achieve this.
 ..
 
-Once you have completed this installation, create and set up a database to confirm that your
-OpenERP installation is working. You can follow earlier chapters in this part of the book to achieve this.
+一旦你已经安装完成，就可以创建数据库了，并确认您的OpenERP的进程在运行。您可以按照本书前面的章节来实现。
 
 .. i18n: .. raw:: html
 .. i18n: 

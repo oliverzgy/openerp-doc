@@ -2,7 +2,7 @@
 .. i18n: ================
 ..
 
-Loading the Cube
+多维度的加载
 ================
 
 .. i18n: Cube Browser will provide the selection of the schema and cube. It comes with a toolbar that allows some common operations with one click.

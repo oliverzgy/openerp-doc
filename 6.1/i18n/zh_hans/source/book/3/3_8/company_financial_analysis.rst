@@ -1,3 +1,4 @@
+
 .. i18n: .. index::
 .. i18n:    single: budgeting
 ..
@@ -47,7 +48,7 @@ That is what you will use ``Budgetary Positions`` for, from the menu :menuselect
 .. i18n: To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `New` button.
 ..
 
-To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `New` button.
+要开始预算, 点击菜单 :menuselection:`会计(Accounting) --> 预算(Budgets) --> 预算(Budgets)`, 点击 `新建(New)` 按钮可以创建一张预算单据.
 
 .. i18n: .. figure::  images/account_budget_form.png
 .. i18n:    :scale: 75
@@ -60,7 +61,7 @@ To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --
    :scale: 75
    :align: center
 
-   *Optimistic Budget*
+   *乐观预算*
 
 .. i18n: .. index::
 .. i18n:    single: budget revisions
@@ -76,16 +77,16 @@ To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --
 .. i18n:     Rather than edit an existing budget, make a new version so that you can keep your original estimates safe for comparison. This lets you analyse your changing perspectives of the company from revision to revision.
 ..
 
-.. tip:: Budget Revisions
+.. tip:: 预算的版本管理
 
-    Even though you *can* modify a budget at any time to make a revision, we recommend you to create a new budget, because otherwise you will have no history of changes.
+    虽然你 *可以* 在任何时间进行预算的修改,但我们还是推荐只是做创建一个新的预算,这样才可以很明了地看到预算的整个修改历史.
 
     Rather than edit an existing budget, make a new version so that you can keep your original estimates safe for comparison. This lets you analyse your changing perspectives of the company from revision to revision.
 
 .. i18n: To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts for each analytic account within a specified period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
 ..
 
-To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts for each analytic account within a specified period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
+创建一张预算单后,输入 :guilabel:`摘要(Name)`, :guilabel:`编码(Code)`, :guilabel:`起始日期(Start Date)`, :guilabel:`终止日期(End Date)` . 然后将你要纳入预算管理的某个会计期间的辅助核算科目及预算金额全部一条条地填写进去(注意: 采购类的需要输入一个负数金额):
 
 .. i18n: * an :guilabel:`Analytic Account`
 .. i18n: 
@@ -107,31 +108,31 @@ To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`
 .. i18n: Once this information is completed, save your budget.
 ..
 
-Once this information is completed, save your budget.
+上述信息完成后, 保存该预算单.
 
 .. i18n: A budget has various stages:
 ..
 
-A budget has various stages:
+预算各阶段的流程:
 
 .. i18n: * *Confirmed*: the budget is to be reviewed, but it can still be changed before actual approval;
 .. i18n: 
 .. i18n: * *Approved*: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
 ..
 
-* *Confirmed*: the budget is to be reviewed, but it can still be changed before actual approval;
+* *确认(Confirmed)*: 表示预算已审核通过,但还是可以随时进行预算修改.
 
 * *Approved*: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
 
 .. i18n: You can cancel a budget and reset it to draft for the two preceding steps.
 ..
 
-You can cancel a budget and reset it to draft for the two preceding steps.
+如果觉得不合适,你随时可以在前面两种状态下, `取消(Cancel)` 该预算单后再将其 `置为草稿`.
 
 .. i18n: * *Done*: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
 ..
 
-* *Done*: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
+* *完成(Done)*: 完成状态的预算单就不允许再做任何修改了. 而且也不能再取消后置为草稿了.
 
 .. i18n: The :guilabel:`Theoretical Amount` indicates the actual amount that might have been realised for the budget concerned according to the current date. When your budget is 1200 for 12 months, and today is the 30 October, the theoretical amount will be 1000, since this is the actual amount that could have been realised to date.
 ..

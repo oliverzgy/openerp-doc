@@ -496,9 +496,8 @@ OpenERP会自动处理发票相关的采购成本会计凭证分录.
 .. i18n: invoices you.
 ..
 
-Invoices are then handled just like those controlled from ``On Order``. Once the invoice arrives at
-the accounting service, he just compares it with the invoices waiting to control what the supplier
-invoices you.
+``基于收/发货`` 的发票处理与 ``基于订单`` 的发票处理流程类似. 一但相应财务人员收到发票,只需要将发票与系统内生成的该供应
+商发票进行比对.比对正确无误后在系统中确认该发票即可.
 
 .. i18n: .. index::
 .. i18n:    single: module; delivery
@@ -661,8 +660,7 @@ OpenERP有多种方法计算更新产品成本:
 
 .. tip:: 简化界面
 
-   If you work in the ``Simplified`` interface mode you will not see the field that lets you
-   manage the price calculation mode for a product. In that case, the default value is ``Standard Price``.
+   在简化界面时,你可能在产品页找不到更改产品成本计算方法的字段. 在本例中, 默认值是 ``标准成本价``.
 
 .. i18n: The ``Standard Price`` setting means that the product cost is fixed manually for each product in the field
 .. i18n: :guilabel:`Cost Price`. This is usually revalued once a year based on the average of purchase costs
@@ -675,8 +673,7 @@ OpenERP有多种方法计算更新产品成本:
 .. i18n: the year. For example, the standard cost could be used to manage books, or the cost of bread.
 ..
 
-You usually use standard costs to manage products where the price hardly changes over the course of
-the year. For example, the standard cost could be used to manage books, or the cost of bread.
+如果产品的价格在一年中的变化幅度不大时, 通常使用标准价的成本计价法. 如书籍,面包这类的产品, 通常就使用标准计价法.
 
 .. i18n: Those costs that can be fixed for the whole year bring certain advantages:
 ..
@@ -690,8 +687,7 @@ the year. For example, the standard cost could be used to manage books, or the c
 .. i18n:   number of items received.
 ..
 
-* you can base the sale price on the product cost and then work with margins rather than 
-  a fixed price per product,
+* 你可以按产品的成本价来指导制定销售价, 这样每个产品就基本上可以保证一个比较固定的利润率.
 
 * accounting is simplified because there is a direct relationship between the value of stock and the
   number of items received.
@@ -734,8 +730,8 @@ energy.
 .. i18n: into the warehouse. The deliveries (exit from stock) have no impact on the product price.
 ..
 
-In this case, you would want OpenERP to automatically set the price in response to each goods receipt movement
-into the warehouse. The deliveries (exit from stock) have no impact on the product price.
+在本例中, OpenERP 会自动将求出仓库中该产品的所有的收货单的平均价格做为该产品的成本价. 发货单(出库类)则不会参与计算,
+不影响产品成本.
 
 .. i18n: .. tip:: Calculating the Price
 .. i18n: 
@@ -753,20 +749,20 @@ into the warehouse. The deliveries (exit from stock) have no impact on the produ
 .. i18n:    * QR: Quantity Received.
 ..
 
-.. tip:: Calculating the Price
+.. tip:: 成本价计算
 
-   At each goods receipt, the product price is recalculated using the following accounting formula:
-   NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:
+   每次收货, 都会引发产品成本价的重新计算 计算公式如下:
+   NP = (OP * QS + PP * QR) / (QS + QR), 各缩写意义为:
 
-   * NP: New Price,
+   * NP: 更新后的最新成本,
 
-   * OP: Old Price,
+   * OP: 原成本价,
 
-   * QS: Quantity actually in Stock,
+   * QS: 现库存数量,
 
-   * PP: Price Paid for the quantity received,
+   * PP: 本次收货的产品的支付价,
 
-   * QR: Quantity Received.
+   * QR: 本次收货数量.
 
 .. i18n: If the products are managed as a weighted average, OpenERP will open a
 .. i18n: window that lets you specify the price of the product received at each goods receipt. 
@@ -775,11 +771,8 @@ into the warehouse. The deliveries (exit from stock) have no impact on the produ
 .. i18n: delivery to the various received products, for example.
 ..
 
-If the products are managed as a weighted average, OpenERP will open a
-window that lets you specify the price of the product received at each goods receipt. 
-The purchase price is, by default,
-set from the purchase order, but you can change the price to add the cost of
-delivery to the various received products, for example.
+如果你的产品使用的是加权平均成本计算法,OpenERP 则会在产品收货时弹出窗体让你指定该批次产品的成本价. 默认为该次采购的
+采购单价. 你还可以在收货时对个别货物的采购价进行单独的调整. 如下图所示:
 
 .. i18n: .. figure:: images/purchase_pmp.png
 .. i18n:    :scale: 75
@@ -792,14 +785,13 @@ delivery to the various received products, for example.
    :scale: 75
    :align: center
 
-   *Goods Receipt of Products managed in Weighted Average*
+   *基于收货的加权平均价*
 
 .. i18n: Once the receipt has been confirmed, the price is automatically recalculated and entered on the
 .. i18n: product form.
 ..
 
-Once the receipt has been confirmed, the price is automatically recalculated and entered on the
-product form.
+每次收货确认后, 产品会重新计算成本价,并更新到相应的产品上.
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.
 ..

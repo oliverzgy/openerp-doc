@@ -103,28 +103,28 @@ OpenERP 在线使用
 .. i18n: OpenERP's Online offer includes several services: hosting at high bandwidth, database management, stable security update, backups, maintenance (24/7 server monitoring), bug fixing and migrations.
 ..
 
-OpenERP's Online offer includes several services: hosting at high bandwidth, database management, stable security update, backups, maintenance (24/7 server monitoring), bug fixing and migrations.
+OpenERP的在线版本包括以下几种服务：高带宽的主机，数据库管理，稳定的安全更新，备份，7x24小时的维护，错误修复和迁移。
+
 
 .. i18n: OpenERP guarantees that the software running on OpenERP Online is exactly the same as the Open Source official
 .. i18n: version of OpenERP. Any improvement made on OpenERP will be available online. This allows you to easily switch from the online version to the local version anytime.
 ..
 
-OpenERP guarantees that the software running on OpenERP Online is exactly the same as the Open Source official
-version of OpenERP. Any improvement made on OpenERP will be available online. This allows you to easily switch from the online version to the local version anytime.
+OpenERP保证在线版本同官方的开源版本完全一致。在线版本包含OpenERP的任何改进，这对用户从在线版顺利切换到本地版非常有好处。
 
 .. i18n: So even if the OpenERP Online solution best suits your needs today, you can easily switch to an installation on your own servers according to your company's changing requirements or growth. You can also change your service provider
 .. i18n: anytime, while continuing to use the exact same system. Hence, you do not depend on your host. In addition, OpenERP works with standard and open formats and programming languages which allow
 .. i18n: you to export your data and use them in any other software.
 ..
 
-So even if the OpenERP Online solution best suits your needs today, you can easily switch to an installation on your own servers according to your company's changing requirements or growth. You can also change your service provider
-anytime, while continuing to use the exact same system. Hence, you do not depend on your host. In addition, OpenERP works with standard and open formats and programming languages which allow
-you to export your data and use them in any other software.
+所以即使今天OpenERP在线方案可以非常好的满足您的需要，如果以后你的公司变大了或者需求改变了，
+你也可以在任何时候很容易的切换到本地安装版本，你也可以在需要时更换服务商而继续使用相同的系统。
+因此你不必依靠你的主机。而且，OpenERP以标准和开放的方式运行，所使用的优秀的编程语言允许你导出数据并在任何软件中使用。
+
 
 .. i18n: These advantages give you total control over your data, your software, your platform.
 ..
-
-These advantages give you total control over your data, your software, your platform.
+这些好处可以让用户完全控制自己的数据，软件和平台。
 
 .. i18n: .. figure:: images/start_saas.jpeg
 .. i18n:    :align: center
@@ -137,28 +137,33 @@ These advantages give you total control over your data, your software, your plat
    :align: center
    :scale: 90
 
-   *Subscribe and Start with OpenERP Online*
+   *订购并开始使用在线服务*
 
 .. i18n: If you want to start working with the online platform, you can navigate to http://www.openerp.com/online. After successful registration, you will be able to configure and use OpenERP online. To log in to your OpenERP Online account, you will receive a username and password. You can build the software to fit your needs, at your own pace! 
 ..
 
-If you want to start working with the online platform, you can navigate to http://www.openerp.com/online. After successful registration, you will be able to configure and use OpenERP online. To log in to your OpenERP Online account, you will receive a username and password. You can build the software to fit your needs, at your own pace! 
+如果你希望从在线平台开始，你可以访问这个网址 http://www.openerp.com/online。在成功注册后，你就可以配置和使用OpenERP在线版了。
+登录进你的OpenERP在线账户后，你会收到你的用户名密码。你可以按照自己的步调来建立适合自己的软件。
+
 
 .. i18n: OpenERP Online - Software as a Service - is hosted by OpenERP and paid in the form of a monthly subscription. The pricing model is extremely simple. OpenERP charges a fixed fee per month per user. You will get an invoice each month according to the number of users registered in the system at that time. If you add new users during the next 30 days, they will only be charged with the next invoice.
 .. i18n: You can find the details of current pricing and payment options at http://www.openerp.com/online.
 ..
 
-OpenERP Online - Software as a Service - is hosted by OpenERP and paid in the form of a monthly subscription. The pricing model is extremely simple. OpenERP charges a fixed fee per month per user. You will get an invoice each month according to the number of users registered in the system at that time. If you add new users during the next 30 days, they will only be charged with the next invoice.
-You can find the details of current pricing and payment options at http://www.openerp.com/online.
+OpenERP在线——软件及服务——由OpenERP提供服务，按月订购. 定价模型非常简单。OpenERP按每月每用户收取固定的费用。
+根据这段时间你的系统中的注册用户数，你每个月会收到一个发票。如果你在今后的30天内添加了新用户，他们会被算在下次的发票中。
+你可以在 http://www.openerp.com/online 找到现行的价格和支付选项的明细。
+
 
 .. i18n: .. tip:: Free Trial
 .. i18n: 
 .. i18n:        For a month's free trial, check out OpenERP's http://www.openerp.com/online, which enables you to get started quickly without incurring costs for integration or for buying computer systems. After the free trial expires, you can easily continue using OpenERP Online.
 ..
 
-.. tip:: Free Trial
-
-       For a month's free trial, check out OpenERP's http://www.openerp.com/online, which enables you to get started quickly without incurring costs for integration or for buying computer systems. After the free trial expires, you can easily continue using OpenERP Online.
+.. 小窍门:: 免费试用
+       访问 http://www.openerp.com/online 获得一个月的试用版，这可以让你在零成本或无系统的情况下快速的体验OpenERP。
+        这样做的好处是在免费试用期后，当你继续使用OpenERP在线版会感到非常轻松。
+        
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.
 ..

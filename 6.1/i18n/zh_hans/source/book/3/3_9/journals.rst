@@ -15,7 +15,7 @@
 .. i18n: All your accounting entries need to appear in an accounting journal. So you should create a Sales Journal for customer invoices, a Sales Refund journal for customer credit notes, a Purchase Journal for supplier invoices, a Purchase Refund journal for supplier credit notes and a Bank Journal for bank transactions.
 ..
 
-All your accounting entries need to appear in an accounting journal. So you should create a Sales Journal for customer invoices, a Sales Refund journal for customer credit notes, a Purchase Journal for supplier invoices, a Purchase Refund journal for supplier credit notes and a Bank Journal for bank transactions.
+所有的会计分录需要由会计帐簿来显示。因此您应该为销售发票创建销售分类帐， a Sales Refund journal for customer credit notes, 为供应商发票创建采购分类帐， a Purchase Refund journal for supplier credit notes and a Bank Journal for bank transactions.
 
 .. i18n: Configuring a Journal
 .. i18n: ---------------------
@@ -27,7 +27,7 @@ All your accounting entries need to appear in an accounting journal. So you shou
 .. i18n: To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
 ..
 
-To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
+要查看，编辑或创建新分类帐，使用菜单 :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
 
 .. i18n: .. figure::  images/account_journal_form.png
 .. i18n:    :scale: 75
@@ -40,27 +40,27 @@ To view, edit or create new journals use the menu :menuselection:`Accounting -->
    :scale: 75
    :align: center
 
-   *Defining an Accounting Journal*
+   *定义会计分类帐*
 
 .. i18n: Blue fields are mandatory fields. When you select a journal type, some configuration parameters will be preset. The journal type will tell the system where the journal concerned can be used.
 ..
 
-Blue fields are mandatory fields. When you select a journal type, some configuration parameters will be preset. The journal type will tell the system where the journal concerned can be used.
+蓝色字段均为必填字段。当您选择了分类帐类型，将被预置一些配置参数。 分类帐类型告诉系统有关分类帐可用于何处。
 
 .. i18n: Each journal has a specific way of displaying data. The type of journal determines the journal view, which indicates the fields that need to be visible and are required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example, the field :guilabel:`Statement` has to appear when entering data in the bank journal, but not in the other journals.
 ..
 
-Each journal has a specific way of displaying data. The type of journal determines the journal view, which indicates the fields that need to be visible and are required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example, the field :guilabel:`Statement` has to appear when entering data in the bank journal, but not in the other journals.
+每一分类帐都有显示数据的特殊方式。 分类帐类型决定分类帐视图，也就是表明哪些字段需要显示出来和输入会计数据。视图确定字段的顺序和每个字段的属性。 比如, 字段  :guilabel:`Statement`  在银行分类帐录入数据时会出现，但不会出现在别的分类帐中。
 
 .. i18n: You can also create your own journal views. However, before creating a new view for a journal, check whether there is nothing similar already defined. You should only create a new view for new types of journals.
 ..
 
-You can also create your own journal views. However, before creating a new view for a journal, check whether there is nothing similar already defined. You should only create a new view for new types of journals.
+您还可以创建自己的分类帐视图。 然而，在创建新的视图前，最好检查一下有没有已经定义的类似的视图。您应该仅为新分类帐类型创建新的视图。
 
 .. i18n: You can create a sequence for each journal. This sequence determines the automatic numbering for accounting entries. Several journals can use the same sequence if you want to define one for them all, and if your legislation allows this.
 ..
 
-You can create a sequence for each journal. This sequence determines the automatic numbering for accounting entries. Several journals can use the same sequence if you want to define one for them all, and if your legislation allows this.
+您可为每一分类帐创建序号。 这个序号为会计分录自动设定号码。 如果您想将多个分类帐定义成使用同一个序号（如果您允许这么做），它们可以使用同一套序号。
 
 .. i18n: .. tip:: Sequences
 .. i18n: 
@@ -68,9 +68,9 @@ You can create a sequence for each journal. This sequence determines the automat
 .. i18n:     By default, OpenERP has only one sequence in the journal definition. If you need two separate sequences to be kept for the journal, you can install the module :mod:`account_sequence`.
 ..
 
-.. tip:: Sequences
+.. tip:: 序号编码
 
-    Sequences can also be created from the :menuselection:`Settings --> Configuration --> Sequences & Identifiers --> Sequences`.
+    序号可通过 :menuselection:`Settings --> Configuration --> Sequences & Identifiers --> Sequences` 创建。
     By default, OpenERP has only one sequence in the journal definition. If you need two separate sequences to be kept for the journal, you can install the module :mod:`account_sequence`.
 
 .. i18n: The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data through :guilabel:`Journal Items`. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
@@ -128,18 +128,14 @@ This functionality is useful for limiting possible data entry errors by restrict
 .. i18n:         transferring payments from one bank to another, reducing your risks.
 ..
 
-.. tip:: Control of Data Entry
+.. tip:: 数据录入控制
 
-        In accounting it is not a good idea to allow a data entry directly from bank account A to bank
-        account B.
-        If you enter a transaction from bank A to bank B, the transaction will be accounted for twice.
+        在帐务处理过程中，允许直接从银行A到银行B的会计分录不是一个好主意。如果您录入了银行A直接到银行B的会计分录，则这个分录会被记账两次。  
 
-        To prevent this problem, pass the transaction through intermediate account C.
-        At the time of data entry, the system checks the type of account that is accepted in the bank
-        journal: only accounts that are not of type ``Bank`` are accepted.
+        要避免这个问题，通过中间科目C，在数据录入时，系统检查银行分类帐中可接受的科目类型: 只有非 ``Bank`` 类型的科目才会被接受。
 
-        If your accountant defines this control properly, non-accounting users are prevented from
-        transferring payments from one bank to another, reducing your risks.
+        如果您的财务人员定义了这种特性，则非会计人员不可从一个银行帐户划款到另一银行帐户，这可降低风险。
+        
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.
 ..

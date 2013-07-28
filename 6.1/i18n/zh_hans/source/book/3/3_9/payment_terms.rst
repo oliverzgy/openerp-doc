@@ -20,8 +20,7 @@
 .. i18n: Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`New`.
 ..
 
-要定义付款条款，使用菜单 :menuselection:`Accounting -->
-Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`New`.
+要定义付款条款，使用菜单 :menuselection:`会计(Accounting) --> 配置(Configuration) --> 其它(Miscellaneous) --> 付款条件(Payment Terms)` 再点击 :guilabel:`新建(New)`.
 
 .. i18n: The figure below represents the following payment term: 5000 within 5 days, 50% payment at the last day of current month,
 .. i18n: Remaining on 15th of next month.
@@ -55,15 +54,12 @@ Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`New
 .. i18n: the rules are evaluated.
 ..
 
-Then create individual lines for calculating the terms in the section :guilabel:`Payment Term`. You
-must give each line a name (:guilabel:`Line Name`). These give an informative title and do not affect
-the actual calculation of terms. The :guilabel:`Sequence` field lets you define the order in which
-the rules are evaluated.
+在 :guilabel:`Payment Term` 部分新增单独的一行以创建新付款条款。您必须给每行提供一个名称 :guilabel:`Line Name` . 这些信息并不会对付款条款的实际计算产生影响。  :guilabel:`Sequence` 字段允许您定义计算规则的顺序。
 
 .. i18n: The :guilabel:`Valuation` field enables you to calculate the amount to pay for each line:
 ..
 
-The :guilabel:`Valuation` field enables you to calculate the amount to pay for each line:
+每行中 :guilabel:`Valuation` 字段能让您计算付款金额:
 
 .. i18n: * ``Percent`` : the line corresponds to a percentage of the total amount, the factor being
 .. i18n:   given in :guilabel:`Value Amount`. The number indicated in :guilabel:`Value Amount` must take a value between 0 and 1.
@@ -73,42 +69,38 @@ The :guilabel:`Valuation` field enables you to calculate the amount to pay for e
 .. i18n: * ``Balance`` : indicates the balance remaining after accounting for the other lines.
 ..
 
-* ``Percent`` : the line corresponds to a percentage of the total amount, the factor being
-  given in :guilabel:`Value Amount`. The number indicated in :guilabel:`Value Amount` must take a value between 0 and 1.
+* ``Percent`` : 本行表明此次付款占总金额的百分比，百分比在 :guilabel:`Value Amount` 字段中提供， :guilabel:`Value Amount` 中的取值必须在0到1之间.
 
-* ``Fixed Amount`` : this is a fixed value given by the :guilabel:`Value Amount` box.
+* ``Fixed Amount`` : 这是一个给定在 :guilabel:`Value Amount` 中的固定金额.
 
-* ``Balance`` : indicates the balance remaining after accounting for the other lines.
+* ``Balance`` : 表明本次付款金额是除去以前付款金额的余款.
 
 .. i18n: Think carefully about setting the last line of the calculation to \ ``Balance`` \, to avoid rounding
 .. i18n: errors. The highest sequence number is evaluated last.
 ..
 
-Think carefully about setting the last line of the calculation to \ ``Balance`` \, to avoid rounding
-errors. The highest sequence number is evaluated last.
+仔细思考为何设置最后一行为\ ``Balance`` \， 可以避免舍入误差。顺序号最大的最后计算。
 
 .. i18n: The two last fields, :guilabel:`Number of Days` and :guilabel:`Day of the Month`, enable the calculation of
 .. i18n: the delay in payment for each line. The delay :guilabel:`Day of the Month` can be set to \ ``-1`` \, \ ``0`` \
 .. i18n: or any positive number. For example, if today is 20th December 2010, and if you want to set payment terms like this:
 ..
 
-The two last fields, :guilabel:`Number of Days` and :guilabel:`Day of the Month`, enable the calculation of
-the delay in payment for each line. The delay :guilabel:`Day of the Month` can be set to \ ``-1`` \, \ ``0`` \
-or any positive number. For example, if today is 20th December 2010, and if you want to set payment terms like this:
+最后两个字段, :guilabel:`Number of Days` 和 :guilabel:`Day of the Month`, 能为每一行提供计算延期处理方法。 延期的 :guilabel:`Day of the Month` 可设置成 \ ``-1`` \, \ ``0`` \或其他正数。比如，如果今天是2010年12月20日，并且您希望像以下所示设置付款条款：
 
-.. i18n: * :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` and `Day of the Month` ``0``. That creates journal entry for date 25th December 2010.
+.. i18n: * :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` , `Day of the Month` ``0``. That creates journal entry for date 25th December 2010.
 .. i18n: * :guilabel:`50% payment at the last day of current month`: set `Valuation` ``Percent``, `Number of Days` ``0`` and  `Day of the Month` ``-1``. That creates journal entry for date 31st December 2010.
 .. i18n: * :guilabel:`Remaining on 15th of next month`: set `Valuation` ``Balance``, `Number of Days` ``0`` and  `Day of the Month` ``15``. That creates journal entry for date 15th January 2011.
 ..
 
-* :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` and `Day of the Month` ``0``. That creates journal entry for date 25th December 2010.
-* :guilabel:`50% payment at the last day of current month`: set `Valuation` ``Percent``, `Number of Days` ``0`` and  `Day of the Month` ``-1``. That creates journal entry for date 31st December 2010.
-* :guilabel:`Remaining on 15th of next month`: set `Valuation` ``Balance``, `Number of Days` ``0`` and  `Day of the Month` ``15``. That creates journal entry for date 15th January 2011.
+* :guilabel:`5天内5000`: 设置 `Valuation` 为 ``Fixed Amount``, `Number of Days` 设置为 ``5`` 并且 `Day of the Month` 设置成 ``0``。 则将在2010年12月25日创建一条会计分录。
+* :guilabel:`50% payment at the last day of current month`: 设置 `Valuation` 为 ``Percent``, `Number of Days` 为 ``0`` 并且设置  `Day of the Month` 为 ``-1``。 则将在2010年12月31日创建一条会计分录。
+* :guilabel:`Remaining on 15th of next month`: 设置 `Valuation` 为 ``Balance``, `Number of Days` 设置成 ``0`` 并且  `Day of the Month` 设置成 ``15``。  则将在2011年1月15日创建一条会计分录。
 
 .. i18n: You can then add payment terms to a Partner through the tab :guilabel:`Accounting` on the partner form.
 ..
 
-You can then add payment terms to a Partner through the tab :guilabel:`Accounting` on the partner form.
+您可以在合作伙伴的 :guilabel:`Accounting` 页签将付款条款指定给合作伙伴.
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.
 ..

@@ -8,7 +8,7 @@
 .. i18n: In OpenERP, the concept of “invoice” includes the following documents:
 ..
 
-In OpenERP, the concept of “invoice” includes the following documents:
+OpenERP中, 发票管理包含以下部分:
 
 .. i18n: * The Customer Invoice
 .. i18n: 
@@ -19,27 +19,25 @@ In OpenERP, the concept of “invoice” includes the following documents:
 .. i18n: * A Supplier Credit Note or Supplier Refund
 ..
 
-* The Customer Invoice
+* 客户发票
 
-* The Supplier Invoice
+* 供应商发票
 
-* A Customer Credit Note or Customer Refund
+* 客户红字发票
 
-* A Supplier Credit Note or Supplier Refund
+* 供应商红字发票
 
 .. i18n: Only the invoice type and the representation mode differ for each of the four documents. But they are
 .. i18n: all stored in the same object type in the system.
 ..
 
-Only the invoice type and the representation mode differ for each of the four documents. But they are
-all stored in the same object type in the system.
+这四类发票在系统是中同一对象, 仅仅只是发票类型与界面展现方式不一样.
 
 .. i18n: You get the correct form for each of the four types of invoice from the menu you use to open it. The
 .. i18n: name of the tab enables you to tell the invoice types apart when you are working on them.
 ..
 
-You get the correct form for each of the four types of invoice from the menu you use to open it. The
-name of the tab enables you to tell the invoice types apart when you are working on them.
+OpenERP 为这四种类型的发票对应设置了四个菜单项,不同的菜单项会打开对应的发票表单, 从表单名就可以区分开.
 
 .. i18n: .. index::
 .. i18n:    single: invoices; types
@@ -61,17 +59,13 @@ name of the tab enables you to tell the invoice types apart when you are working
 .. i18n:           as credit notes.
 ..
 
-.. note::  Types of Invoice
+.. note::  发票类型
 
-        There are many advantages in deriving the different types of invoice from the same object. Two of the
-        most important are:
+        多类型发票使用同一对象有很多方便之处,典型的优势如以下两点:
 
-        * In a multi-company environment with inter-company invoicing, a customer invoice in one company
-          becomes a supplier invoice for the other,
+        * 多公司环境时公司间的发票,一个公司的客户发票则转为另一个公司的供应商发票.
 
-        * This enables you to work and search for all invoices from the same menu. If you are looking for an
-          invoicing history, OpenERP provides both supplier and customer invoices in the same list, as well
-          as credit notes.
+        * 在同一个界面下, 你可以检索和处理各种类型的发票.在处理合作伙伴的应收/付帐时,你可以很清楚在这个列表中列出.
 
 .. i18n: .. index::
 .. i18n:    single: credit note
@@ -94,18 +88,16 @@ name of the tab enables you to tell the invoice types apart when you are working
 .. i18n: Suppliers --> Supplier Invoices`.
 ..
 
-To access customer invoices in OpenERP, use the menu :menuselection:`Accounting -->
-Customers --> Customer Invoices`, and for supplier invoices, use the menu :menuselection:`Accounting -->
-Suppliers --> Supplier Invoices`.
+点击菜单 :menuselection:`会计(Accounting) --> 客户(Customers) --> 客户发票(Customer Invoices)` 进入客户发票列表.
+点击菜单 :menuselection:`会计(Accounting) --> 供应商(Suppliers) --> 供应商发票(Supplier Invoices)` 进入供应商发票列表.
 
 .. i18n: Most of the time, invoices are generated automatically by OpenERP as they are generated from other
 .. i18n: processes in the system. So it is not usually necessary to create them manually, but simply approve
 .. i18n: or validate them. OpenERP uses the following different ways of generating invoices:
 ..
 
-Most of the time, invoices are generated automatically by OpenERP as they are generated from other
-processes in the system. So it is not usually necessary to create them manually, but simply approve
-or validate them. OpenERP uses the following different ways of generating invoices:
+通常情况,OpenERP中的发票都是由业务系统自动生成出来的.所以,一般不需要手工创建发票,只需要轻轻一点确认或审核即可.
+OpenERP中一般有下面的几种途径去生成发票:
 
 .. i18n: * from Supplier or Customer Orders,
 .. i18n: 
@@ -118,13 +110,13 @@ or validate them. OpenERP uses the following different ways of generating invoic
 .. i18n: * from fee charges or other rechargeable expenses (see :ref:`ch-services`).
 ..
 
-* from Supplier or Customer Orders,
+* 来自供应商与客户的订单,
 
 * from receipt or dispatch of goods,
 
-* from work carried out (timesheets, see :ref:`ch-hr`),
+* 来自员工工单(timesheets, 参阅 :ref:`ch-hr`),
 
-* from closed tasks (see :ref:`ch-projects`),
+* 来自完成的项目工作 (参阅 :ref:`ch-projects`),
 
 * from fee charges or other rechargeable expenses (see :ref:`ch-services`).
 
@@ -167,30 +159,27 @@ before validating it.
 .. i18n: kept up-to-date all the time as orders are placed and received, and their taxes are calculated.
 ..
 
-The principle of entering data for invoices in OpenERP is very simple, as it enables non-
-accountant users to create their own invoices. This means that your accounting information can be
-kept up-to-date all the time as orders are placed and received, and their taxes are calculated.
+OpenERP 的发票录入相当方便,而且支持非财务人员录入相应的发票信息.这意味着发票在生成到收款期间,随时可以保证
+发票数据及相应税额计算的更新.
 
 .. i18n: At the same time, it allows people who have more accounting knowledge to keep full control over the
 .. i18n: accounting entries that are being generated. Each value proposed by OpenERP can be modified later
 .. i18n: if needed.
 ..
 
-At the same time, it allows people who have more accounting knowledge to keep full control over the
-accounting entries that are being generated. Each value proposed by OpenERP can be modified later
-if needed.
+同时,具有会计权限的员工可以完成后续的凭证分录的处理.并且分录中的数据还可以继续修改确认.
 
 .. i18n: Start by manually entering a customer invoice. Use :menuselection:`Accounting -->
 .. i18n: Customers --> Customer Invoices` and click on `New` button for this.
 ..
 
-Start by manually entering a customer invoice. Use :menuselection:`Accounting -->
-Customers --> Customer Invoices` and click on `New` button for this.
+点击菜单 :menuselection:`会计(Accounting) --> 客户(Customers) --> 客户发票(Customer Invoices)` 进入客户发票列表, 再点击 `新建(New)` 按钮
+即可创建一张新的客户发票.
 
 .. i18n: A new invoice form opens for entering information.
 ..
 
-A new invoice form opens for entering information.
+在新打开的发票窗体中,输入下面的信息.
 
 .. i18n: .. figure::  images/account_invoice_new.png
 .. i18n:    :scale: 75
@@ -203,12 +192,12 @@ A new invoice form opens for entering information.
    :scale: 75
    :align: center
 
-   *Entering a New Invoice*
+   *输入新发票*
 
 .. i18n: The document is composed of three parts:
 ..
 
-The document is composed of three parts:
+发票包含以下三部分:
 
 .. i18n: * the top of the invoice, with customer information,
 .. i18n: 
@@ -217,11 +206,11 @@ The document is composed of three parts:
 .. i18n: * the bottom of the page, with detail about the taxes, and the totals.
 ..
 
-* the top of the invoice, with customer information,
+* 发票的抬头,是客户相关信息,
 
-* the main body of the invoice, with detailed invoice lines,
+* 发票主体部分,则是发票的明细行,
 
-* the bottom of the page, with detail about the taxes, and the totals.
+* 发票的下面部分,则是关于所缴税行明细以及发票的汇总.
 
 .. i18n: To enter a document in OpenERP, you should always fill in fields in the order they appear on
 .. i18n: screen. Doing it this way means that some of the later fields are filled in automatically from the
@@ -229,10 +218,8 @@ The document is composed of three parts:
 .. i18n: completed automatically:
 ..
 
-To enter a document in OpenERP, you should always fill in fields in the order they appear on
-screen. Doing it this way means that some of the later fields are filled in automatically from the
-selections made in earlier fields. So select the `Customer`, and the following fields are
-completed automatically:
+在填写发票信息的时候,你最好按OpenERP表单上的顺序填定数据.这样的目的是为了让你在录入一些数据后,能自动带出
+其他字段的值.如,你选择一个客户后,下面的这些字段会被自动带出来:
 
 .. i18n: * the invoice address corresponds to the customer contact that was given the address type of
 .. i18n:   `Invoice` in the partner form (or otherwise the address type of `Default`),
@@ -245,11 +232,9 @@ completed automatically:
 .. i18n:   the invoice. For example: 50% in 21 days and 50% in 60 days from the end of the month.
 ..
 
-* the invoice address corresponds to the customer contact that was given the address type of
-  `Invoice` in the partner form (or otherwise the address type of `Default`),
+* 发票地址 默认使用了该客户联系人的发票地址,如果没有发票地址,则使用该客户联系人的默认地址,
 
-* the partner account corresponds to the account given in the `Accounting` which is found in a
-  tab of the partner form,
+* 客户应收账款科目 默认使用了该客户窗体中 `会计` 页签中的 `应收账款` 科目,
 
 * a specific or a default payment condition can be defined for this partner in the
   `Accounting` tab of the partner form. Payment conditions are generated by rules for the payment of
@@ -271,13 +256,11 @@ completed automatically:
 .. i18n:         accounts. Asset and liability accounts for a partner depend on the company that the user works for.
 ..
 
-.. note:: Properties Fields
+.. note:: Properties 字段
 
-        The Properties fields on the Partner form or the Product form are multi-company fields. The value
-        that the user sees in these fields depends on the company that the user works for.
+        ``合作伙伴`` 或者 ``产品`` 上的 `Property` 字段是多公司类型的. 该字段的值取决于当前用户所属公司.
 
-        If you work in a multi-company environment that is using one database, you have several charts of
-        accounts. Asset and liability accounts for a partner depend on the company that the user works for.
+        在一个账套上使用多公司配置,你可能需要为每个公司配置财务报表. 而且合作伙伴的 `资产` 与 `负债` 科目是也按公司分开的.
 
 .. i18n: .. index::
 .. i18n:    single: navigating relationships
@@ -333,32 +316,31 @@ completed automatically:
 
    * CRM requests,
 
-   * open invoices,
+   * 草稿状态发票,
 
    * accounts records,
 
-   * payable and receivable accounts.
+   * 应收/应付科目.
 
 .. i18n: You can add more detailed additional information to the invoice and select the currency that you want to invoice in.
 ..
 
-You can add more detailed additional information to the invoice and select the currency that you want to invoice in.
+录入发票其他相关内容并选择适当的发票币种.
 
 .. i18n: Once the invoice heading is saved, you must enter the different invoice lines. You could use either
 .. i18n: of the two techniques:
 ..
 
-Once the invoice heading is saved, you must enter the different invoice lines. You could use either
-of the two techniques:
+发票表头输入完成后, 输入表体部分时, 你可以用下面两种方式来输入:
 
 .. i18n: * enter the whole field manually,
 .. i18n: 
 .. i18n: * use a product to complete the different fields automatically.
 ..
 
-* enter the whole field manually,
+* 表体各字段手工输入,
 
-* use a product to complete the different fields automatically.
+* 选择一个产品, 让产品相关数据自动完成相关字段的输入.
 
 .. i18n: .. tip:: Invoice Line Description
 .. i18n: 
@@ -366,17 +348,16 @@ of the two techniques:
 .. i18n:         comments you can use the field in the second tab `Notes`.
 ..
 
-.. tip:: Invoice Line Description
+.. tip:: 发票明细备注
 
-        The invoice line description is more of a title than a comment. If you want to add more detailed
-        comments you can use the field in the second tab `Notes`.
+        发票明细备注是对于明细摘要的补充.如果你对于发票明细添加更多的说明时,你只需要在明细窗体中的 `备注(notes)` 
+        字段中输入即可.
 
 .. i18n: So select the product \ ``Basic PC`` \ in the product field in an invoice line. The
 .. i18n: following fields are then completed automatically:
 ..
 
-So select the product \ ``Basic PC`` \ in the product field in an invoice line. The
-following fields are then completed automatically:
+接下去, 发票行选择 \ ``电脑兼容主机`` \ 产品, 下面的字段会自动带出:
 
 .. i18n: *  `Description` : this comes from the product, in the language of the partner,
 .. i18n: 
@@ -443,7 +424,7 @@ following fields are then completed automatically:
 .. i18n:         * location of the product in your warehouses.
 ..
 
-.. note:: Information about the Product
+.. note:: 产品相关信息
 
         When you are entering invoice data, it can sometimes be useful to get hold of more information about
         the product you are invoicing.
@@ -452,11 +433,11 @@ following fields are then completed automatically:
         (in both the web and the GTK clients).
         Then select the available reports. OpenERP provides three standard reports about the product:
 
-        * forecasts of future stock,
+        * 库存预测,
 
-        * product cost structure,
+        * 产品成本结构,
 
-        * location of the product in your warehouses.
+        * 仓库产品库位.
 
 .. i18n: You can enter several invoice lines and modify the values that are automatically completed
 .. i18n: by OpenERP.

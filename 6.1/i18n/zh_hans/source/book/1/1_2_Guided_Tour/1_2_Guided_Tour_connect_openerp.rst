@@ -55,8 +55,7 @@
 .. i18n: as shown in screenshot :ref:`fig-oech2-main`:
 ..
 
-Once you are displaying the main menu, you are able to see the following screen items, 
-as shown in screenshot :ref:`fig-oech2-main`:
+第一屏显示的是下图所示的主菜单 :ref:`fig-oech2-main`:
 
 .. i18n: * the name of the database you are logged into and, just below it, the current user name,
 .. i18n: 
@@ -72,7 +71,7 @@ as shown in screenshot :ref:`fig-oech2-main`:
 .. i18n: * a collection of interesting and useful widgets are available on the right of the home page beside the main menu.
 ..
 
-* the name of the database you are logged into and, just below it, the current user name,
+* 在登陆的帐套名提示下面是你当前的登陆用户.
 
 * the :guilabel:`ONLINE SUPPORT` button, which gives you an overview of the support services provided by OpenERP
   which is available for subscription,

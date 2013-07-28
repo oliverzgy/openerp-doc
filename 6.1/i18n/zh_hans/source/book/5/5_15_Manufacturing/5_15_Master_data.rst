@@ -45,7 +45,7 @@
 .. i18n: Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
 ..
 
-Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
+用 ``m`` 代替木门楣4m(LIN40)的单位PCE 
 
 .. i18n: .. table:: Product Definitions before defining Bills of Materials (already defined)
 .. i18n: 
@@ -68,14 +68,14 @@ Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
    ========== ================= =========================
    图片编号   产品参考号        描述
    ========== ================= =========================
-   ARM100     SHE100            Shelf 100 cm
-   PANLAT     SIDEPAN           Side Panel
-   PANA100    RPAN100           Rear Panel SHE100
-   PROFIL     PROFIL            Assembly Section
-   ETA100     RCK100            Rack 100cm
-   BOIS002    WOOD002           Wood 2mm
-   TAQ000     METC000           Metal Cleats
-   LIN40      LIN40             Wood Lintel 4m
+   ARM100     SHE100            书架 100 cm
+   PANLAT     SIDEPAN           侧面面板
+   PANA100    RPAN100           后面板 SHE100
+   PROFIL     PROFIL            组装
+   ETA100     RCK100            架 100cm
+   BOIS002    WOOD002           木材 2mm
+   TAQ000     METC000           金属防滑钉
+   LIN40      LIN40             木门楣 4m
    ========== ================= =========================
 
 .. i18n: .. table:: New Products to be created before defining Bill of Materials

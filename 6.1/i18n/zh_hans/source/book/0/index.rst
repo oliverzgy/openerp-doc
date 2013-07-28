@@ -214,18 +214,14 @@ OpenERP 解决方案
 .. i18n: could achieve that in OpenERP.
 ..
 
-Having restructured and reorganized many businesses, we wanted our management experience to generate
-a work that is both instructive and practical. It was important for us not to write a manual about
-OpenERP, but instead a work that deals with advanced management techniques realized through these
-IT tools. You will see what management practices might be useful, what is possible, and then how you
-could achieve that in OpenERP.
+我们已经帮助很多企业进行了改建和重组，我们希望我们的管理经验可以在理论和实践上都给读者带来改进。我们并不是要写一本OpenERP
+的手册，而是通过这种IT工具来介绍一种先进的管理技术。你会看到什么样的管理实践是有效的，具备可能性的，还有如何用OpenERP来实现他们。
 
 .. i18n: This is what we will consider OpenERP to be: not an end in itself but just the tool you use to put
 .. i18n: an advanced management system into place.
 ..
 
-这也是我们OpenERP所希望做到的: not an end in itself but just the tool you use to put
-an advanced management system into place.
+这也是我们OpenERP所希望做到的: 不仅限于软件本身而是为您提供一个可以提升管理的工具。
 
 .. i18n: Who is it for?
 .. i18n: --------------
@@ -240,19 +236,16 @@ an advanced management system into place.
 .. i18n: things done in their company.
 ..
 
-Written by two CEOs who have been successful with new technologies, this book is aimed at directors
-and managers who have an ambition to improve the performance of their whole company's management
-team. They are likely to already have significant responsibilities and possess the influence to get
-things done in their company.
+本书由两个非常成功的CEO撰写，他们的成功得益于新技术的运用。这本书的目标读者是希望改进整个公司管理团队的主管和经理们。
+他们可能已经有重要的责任，并且在公司里有重要的影响力。
+
 
 .. i18n: It is likely that most readers will come from small- and medium-sized enterprises (up to a few
 .. i18n: hundred staff), and independent companies, because of the breadth of functions that need to be
 .. i18n: analyzed and involved in change. The same principles also apply to larger companies, however.
 ..
 
-It is likely that most readers will come from small- and medium-sized enterprises (up to a few
-hundred staff), and independent companies, because of the breadth of functions that need to be
-analyzed and involved in change. The same principles also apply to larger companies, however.
+从功能需求上来看，多数读者可能来自中小型企业（100多人）和独立的公司（independent companies）。但是它也适用于较大的公司。
 
 .. i18n: Structure of this book
 .. i18n: ======================
@@ -268,27 +261,24 @@ analyzed and involved in change. The same principles also apply to larger compan
 .. i18n: the :ref:`part2-crm` part, to start with details of OpenERP's functional modules.
 ..
 
-Part One, :ref:`part1-steps`, starts with the installation of OpenERP. If you have already installed OpenERP you
-can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you are already familiar
-with OpenERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
-scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
-the :ref:`part2-crm` part, to start with details of OpenERP's functional modules.
+第一章，:ref:`part1-steps` 安装：从OpenERP的安装开始。如果你已经安装了OpenERP，你可以直接从 :ref:`ch-guided` 节开始。如果你已经非常熟悉OpenERP或者
+Tiny ERP，你可以从 :ref:`ch-real` 节找到如何快速的在一个空数据库中创建一个新的工作流。或者你可以直接略过 :ref:`ch-crm` 从 :ref:`part2-crm` 开始了解
+OpenERP中具体的功能模块。
 
 .. i18n: Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You will find the
 .. i18n: elements necessary for managing an efficient sales department there, and automating tasks to monitor
 .. i18n: performance.
 ..
 
-Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You will find the
-elements necessary for managing an efficient sales department there, and automating tasks to monitor
-performance.
+第二章，:ref:`part2-crm` CRM：供应商和客户关系管理（SRM & CRM），你可以在这里找到管理一个高效的销售部门所需要的要素， 自动化处理可以监视任务的执行情况。
+
 
 .. i18n: Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
 .. i18n: enterprise.
 ..
 
-Part Three, :ref:`part-genacct`, is devoted to general accounting and its key role in the management of the whole
-enterprise.
+第三章，:ref:`part-genacct` 一般会计：讲解一般会计和一般会计在企业管理中的主要规则。
+
 
 .. i18n: Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management:
 .. i18n: Human Resources for managing projects,
@@ -296,34 +286,32 @@ enterprise.
 .. i18n: can help you optimize your leadership of an enterprise.
 ..
 
-Part Four, :ref:`part-ops`, handles all the operational functions of enterprise management:
-Human Resources for managing projects,
-through financial analyses supplied by analytic (or cost) accounts. You will see how using OpenERP
-can help you optimize your leadership of an enterprise.
+第四章，:ref:`part-ops`：处理企业管理中所有的营运职能：通过在analytic(or cost) accounts基础上进行财务上的分析，
+以进行项目中的人力资源管理，你可以看到使用了OpenERP后，它是如何帮助你的公司保持领先地位的。
+
 
 .. i18n: Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacturing
 .. i18n: (the transformation or products and services into other products).
 ..
 
-Part Five, :ref:`part-phys`, describes the physical movement of Stocks and their Manufacturing
-(the transformation or products and services into other products).
+第五章，:ref:`part-phys`：描述了库存和生产过程中物料的移动过程，包括物料和作为服务的人力等转变为产品的过程。
 
 .. i18n: Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
 ..
 
-Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and services.
+第六章，:ref:`part-trade`：处理商品和服务的购买与销售。
 
 .. i18n: Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation & Knowledge handling that OpenERP
 .. i18n: manages.
 ..
 
-Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation & Knowledge handling that OpenERP
-manages.
+第七章，:ref:`part-qual`： 本章专注于OpenERP所管理的过程描述和文档、知识管理。
+
 
 .. i18n: Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure OpenERP, then provides a methodology for implementing OpenERP in your enterprise.
 ..
 
-Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure OpenERP, then provides a methodology for implementing OpenERP in your enterprise.
+第八章，:ref:`part-config`: 本章包含两节，首先解释如何管理和配置OpenERP，接下来提供一套在您的企业中实施OpenERP的方法。
 
 .. i18n: 	.. note::  *About the authors*
 .. i18n: 
@@ -404,68 +392,52 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			Fabien Pinckaers 18岁开始创业。10年后的今天，他已经创立并管理着几个高科技公司，
                         都是关于免费/开源软件的。
 
-			He originated Tiny ERP, now OpenERP, and is the director of two companies including Tiny sprl,
-			the editor of OpenERP. In three years he has grown the Tiny group from one to sixty-five
-			employees
-			without loans or external fund-raising, and while making a profit.
+			他组建了Tiny ERP，现在叫OpenERP。他是包括Tiny sprl在内的两家公司的董事，OpenERP的校订者。
+			三年来他从一个人发展到65人的Tiny团队。在此过程中，没有任何贷款和外部募捐，并且实现了盈利。
+			
+			他已经开发了多个大型的项目，例如：Auction-in-Europe.com，它已经是比利时艺术品市场的领导者了。
+			每天在这上面成交的艺术品甚至超过了ebay.be。
 
-			He has also developed several large scale projects, such as Auction-in-Europe.com,
-			which become the leader in the art market in Belgium.
-			Even today people sell more art works there than on ebay.be.
+			他也是Louvain-la-Neuve上LUG（Linux User Group）和多个免费项目（如：OpenReport, OpenStuff and Tiny Report）的建立者
+			，土木工程师专业(综合技术), 他在IT方面已经多次获得欧洲的奖项，例如Wired
+			和 l'Inscene。
+			
 
-			He is also the founder of the LUG (Linux User Group) of Louvain-la-Neuve,
-			and of several free projects like OpenReport, OpenStuff and Tiny Report.
-			Educated as a civil engineer (polytechnic), he has won several IT prizes in Europe such as Wired
-			and l'Inscene.
+			作为一个对于在企业中使用免费软件的狂热拥护者，他长期在各种讨论中作为演讲人宣传免费软件，不仅如此，
+			他写了很多的文章介绍企业如何使用免费软件进行管理。
+			
 
-			A fierce defender of free software in the enterprise,
-			he is in constant demand as a conference speaker and
-			he is the author of numerous articles dealing with free software in the management of the
-			enterprise.
-
-			Follow Fabien on his blog http://fptiny.blogspot.com/ or on twitter fpopenerp.
+			如果您对他感兴趣，可以访问他的博客http://fptiny.blogspot.com/ 或者twitter账号fpopenerp。
 
                         **Geoff Gardiner**
 
-			Geoff has held posts as director of services and of IT systems for
-			international companies and in manufacturing.
-			He was Senior Industrial Research Fellow at Cambridge University's Institute for Manufacturing
-			where he focused on innovation processes.
+			Geoff曾在国际性的制造类公司担任服务和IT系统总监职位。
+			他是英国剑桥大学制造研究所高级工业研究院研究员，他专注于过程创新。
 
-			He founded Seath Solutions Ltd (http://www.seathsolutions.com/) to provide services
-			in the use of Open Source software, particularly OpenERP, for business management.
+			他建立了Seath公司（http://www.seathsolutions.com/）来为开源软件的使用提供服务， 特别是OpenERP在企业中的应用.
+			他是文章和书籍的作者，专注于流程和技术的创新，
+			Geoff也是OpenERP项目的贡献者。
+			他持有克兰菲尔德管理学院的MBA证书和剑桥大学圣三一堂的工程和电子科学硕士学位。
+			他同时是工程及科技学会和作家协会的会员。
+			
+			经过观察，亲身感受，和领导各种组织的流程实施项目，他有很多关于如何成功地通过采用一个管理自动化工具有效的进行管理的想法与大家分享。
 
-			Author of articles and books focusing on the processes and technology of innovation,
-			Geoff is also an active contributor to the OpenERP project.
-			He holds an MBA from Cranfield School of Management and
-			an MA in Engineering and Electrical Sciences from Trinity Hall, Cambridge.
-			He is a member of the Institution of Engineering and Technology and of the Society of Authors.
-
-			Having observed, suffered, and led process implementation projects in various organizations,
-			he has many thoughts to share on the successful adoption of an effective management automation
-			tool.
 
 	                **Els Van Vossel**
 
-			Els Van Vossel always had a dedication to both written and spoken word.
-			Clear and explicit communication is crucial.
+			Els Van Vossel始终致力于语言方面的工作，包括口头的和书面的。在她看来清楚、明确的交流是最关键的。
 
-			Educated as a Professional Translator in Antwerp, she worked as an independent translator
-			on the localization of major ERP software. Els acquired ERP knowledge and decided
-			to start working as a functional ERP consultant and a Technical Communicator for ERP software.
+			毕业于安特卫普的专业翻译，她的工作是作为一个独立翻译将主流ERP软件本地化。 通过这些工作Els获得了ERP知识，
+			她决定开始作一名ERP顾问和ERP软件的技术交流者。
+			因此开源软件的世界变的越来越有吸引力。她开始利用业余时间从事OpenERP方面的工作，Els真的很想
+			与Fabien Pinckaers见一面，以告诉他她对于有关文档和培训策略的想法。
+			在合作者大会上，她听到Fabien正在找人来管理培训和文档。
+			
+			这绝对是一个证明自己的机会，现在Els是OpenERP的培训计划经理,负责全球OpenERP的培训和认证计划。
 
-			As such, the world of OpenSource software became more and more attractive.
-			She started working with OpenERP software in her free time and doing so, Els really wanted to
-			meet Fabien Pinckaers to share thoughts about documentation and training strategy.
-			At a Partner Meeting she heard Fabien was looking for someone to manage training & documentation.
-			This was absolutely an opportunity to be qualified, and now Els is the OpenERP Training Program Manager
-			and responsible for the worldwide training and certification program of OpenERP.
+			做个多个软件手册的作者，要从事于OpenERP文档的工作和不断的把它带到一个更高的水平是非常有挑战的。请注意，这是一个苦差事，但Els认为做的很高兴！
 
-			Being an author of several Software Manuals, it is a great challenge to work on the
-			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of a job,
-			but Els finds great pleasure in doing it!
-
-			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel.
+			如果您对她感兴趣，可以访问她的博客http://training-openerp.blogspot.com/ 或者twitter账号elsvanvossel
 
 .. i18n: Dedication
 .. i18n: ==========
@@ -477,33 +449,31 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 .. i18n:         *From Geoff Gardiner*
 ..
 
-        *From Geoff Gardiner*
+        *Geoff Gardiner*
 
 .. i18n: My gratitude goes to my co-author, Fabien Pinckaers, for his vision and tenacity in
 .. i18n: developing Tiny ERP and OpenERP, and the team at OpenERP for its excellent work on this.
 ..
 
-My gratitude goes to my co-author, Fabien Pinckaers, for his vision and tenacity in
-developing Tiny ERP and OpenERP, and the team at OpenERP for its excellent work on this.
+我还要感谢我的合著者，Fabien Pinckaers，为了他在发展Tiny ERP和OpenERP方面的远见和坚韧，同时感谢OpenERP团队出色的工作。
 
 .. i18n: OpenERP relies on a philosophy of Open Source and on the technologies that have been
 .. i18n: developed and tuned over the years by numerous talented people. Their efforts are greatly
 .. i18n: appreciated.
 ..
 
-OpenERP relies on a philosophy of Open Source and on the technologies that have been
-developed and tuned over the years by numerous talented people. Their efforts are greatly
-appreciated.
+OpenERP依靠的是开源哲学和技术，这些技术已经由大批的天才开发出来并且多年来不断完善。非常感谢他们的努力。
 
 .. i18n: Thanks also to my family for their encouragement, their tolerance and their constant presence.
 ..
 
-Thanks also to my family for their encouragement, their tolerance and their constant presence.
+也感谢家人对我的鼓励，包容和一直以来对我的支持。
+
 
 .. i18n:         *From Els Van Vossel*
 ..
 
-        *From Els Van Vossel*
+        *Els Van Vossel*
 
 .. i18n: Thank you Fabien, for offering me the opportunity to work with OpenERP.
 .. i18n: Thanks to my documentation team for helping me to get a first V6.0.0 version of the documentation!
@@ -511,24 +481,21 @@ Thanks also to my family for their encouragement, their tolerance and their cons
 .. i18n: get a real Business-oriented version. For that, already in advance I thank the OpenERP team for their support.
 ..
 
-Thank you Fabien, for offering me the opportunity to work with OpenERP.
-Thanks to my documentation team for helping me to get a first V6.0.0 version of the documentation!
-In the near future, I dedicate myself to restructuring the documentation completely and manage to
-get a real Business-oriented version. For that, already in advance I thank the OpenERP team for their support.
+Fabien，感谢你给我一个与OpenERP共事的机会。感谢我的文档团队帮助我拿到第一份OpenERP 6.0的文档。 
+在不久的将来，我会致力于重新组织这些文档，使其成为一个真正可以用于实际业务的版本。在这里我预先感谢OpenERP团队的支持。
 
 .. i18n:         *From Fabien Pinckaers*
 ..
 
-        *From Fabien Pinckaers*
+        *Fabien Pinckaers*
 
 .. i18n: I address my thanks to all of the team at OpenERP for their hard work in preparing, translating and
 .. i18n: re-reading the book in its various forms.
 .. i18n: My particular thanks to Laurence Henrion and my family for supporting me throughout all this effort.
 ..
 
-I address my thanks to all of the team at OpenERP for their hard work in preparing, translating and
-re-reading the book in its various forms.
-My particular thanks to Laurence Henrion and my family for supporting me throughout all this effort.
+我要对OpenERP团队的全体成员表达我的感谢。感谢他们在准备，翻译和各种形式的校对工作中辛勤的付出。
+我要特别感谢Laurence Henrion和我的家人，感谢他们自始至终对我的支持。
 
 .. i18n: .. Copyright © Open Object Press. All rights reserved.
 ..
